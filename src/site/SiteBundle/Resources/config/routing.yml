@@ -1,5 +1,9 @@
 # src/sdz/BlogBundle/Resources/config/routing.yml
 
+site_index:
+    pattern:   /
+    defaults:  { _controller: siteSiteBundle:Site:index }
+
 site_home:
     pattern:   /home
     defaults:  { _controller: siteSiteBundle:Site:index }
