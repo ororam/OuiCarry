@@ -1,0 +1,23 @@
+********************************
+*                              *
+*  Symfony requirements check  *
+*                              *
+********************************
+
+php.ini used by PHP: /etc/php5/cli/php.ini
+
+** WARNING **
+*  The PHP CLI can use a different php.ini file
+*  than the one used with your web server.
+*  If this is the case, please ALSO launch this
+*  utility from your web server.
+** WARNING **
+
+** Mandatory requirements **
+
+  OK        Checking that PHP version is at least 5.3.2 (5.3.6-13ubuntu3.8 installed)
+
+
+[[ ERROR ]] Checking that the "date.timezone" setting is set: FAILED
+            *** Set the "date.timezone" setting in php.ini (like Europe/Paris) ***
+You must fix this problem before resuming the check.

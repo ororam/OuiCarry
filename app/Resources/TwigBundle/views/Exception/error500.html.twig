@@ -1,0 +1,15 @@
+{# src/site/SiteBundle/Resources/views/Site/content_page.html.twig #}
+
+{% extends "siteSiteBundle::layout.html.twig" %}
+
+{% block page_title %}PROBLEME INTERNE{% endblock %}
+
+{% block content %}
+        <h1>Oops! Une erreur est survenue !</h1>
+        <h2>Erreur 500: Problème interne au serveur.</h2>
+
+        <div>
+			Une erreur s'est produite. Veuillez s'il vous plait nous envoyer un email à contact@ouicarry.com en nous indiquant ce que vous faisiez lorsque cette erreur s'est produite. Nous allons y remédier dès que possible. Veuillez nous excuser de la gêne occasionnée.
+        </div>
+        <div style="padding-top: 50px;"></div>
+{% endblock %}

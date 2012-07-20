@@ -1,0 +1,22 @@
+{# src/site/SiteBundle/Resources/views/Site/content_page.html.twig #}
+
+{% extends "siteSiteBundle::layout.html.twig" %}
+
+{% block page_title %}NOUS CONTACTER{% endblock %}
+
+{% block content %}
+Afin de nous contacter, veuillez remplir ce formulaire :<br><br>
+
+    <form action="contact" method="post" {{ form_enctype(form) }} class="blogger">
+        {{ form_errors(form) }}
+
+        {{ form_row(form.nom) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.sujet) }}
+        {{ form_row(form.message) }}
+
+        {{ form_rest(form) }}
+
+        <input type="submit" value="Envoyer" />
+    </form>
+{% endblock %}

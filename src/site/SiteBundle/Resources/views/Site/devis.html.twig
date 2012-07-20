@@ -1,0 +1,23 @@
+{# src/site/SiteBundle/Resources/views/Site/content_page.html.twig #}
+
+{% extends "siteSiteBundle::layout.html.twig" %}
+
+{% block page_title %}OBTENIR UN DEVIS{% endblock %}
+
+{% block content %}
+Afin d'obtenir un devis, veuillez remplir ce formulaire :<br><br>
+
+    <form action="devis" method="post" {{ form_enctype(form) }} class="blogger">
+        {{ form_errors(form) }}
+
+        {{ form_row(form.nom) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.type) }}
+        {{ form_row(form.poids) }}
+        {{ form_row(form.description) }}
+
+        {{ form_rest(form) }}
+
+        <input type="submit" value="Envoyer" />
+    </form>
+{% endblock %}
