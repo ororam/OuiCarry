@@ -13,6 +13,10 @@ class Devis
 
     protected $poids;
 
+    protected $depart;
+
+    protected $destination;
+
     protected $description;
 
     public function getNom()
@@ -63,5 +67,25 @@ class Devis
     public function setDescription($description)
     {
         $this->description = $description;
+    }
+
+    public function getDestination()
+    {
+        return $this->destination;
+    }
+
+    public function setDestination($destination)
+    {
+        $this->destination = $destination;
+    }
+
+    public function getDepart()
+    {
+        return $this->depart;
+    }
+
+    public function setDepart($depart)
+    {
+        $this->depart = $depart;
     }
 }
