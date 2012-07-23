@@ -54,7 +54,7 @@ class SiteController extends Controller
         $headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"";
         mail($destinataire,$sujet,$message,$headers);
         echo "<script>";
-        echo "timer = setTimeout(\"document.location.href='contact'\", 100)";
+        echo "timer = setTimeout(\"document.location.href='home'\", 100)";
         echo "</script>";
         echo "<SCRIPT LANGUAGE=\"JavaScript\">alert('Message envoye avec succes.');</SCRIPT>";
         exit;
@@ -88,7 +88,7 @@ class SiteController extends Controller
         $headers .= "Content-Type: text/plain; charset=\"iso-8859-1\"";
         mail($destinataire,$sujet,$message,$headers);
         echo "<script>";
-        echo "timer = setTimeout(\"document.location.href='devis'\", 100)";
+        echo "timer = setTimeout(\"document.location.href='home'\", 100)";
         echo "</script>";
         echo "<SCRIPT LANGUAGE=\"JavaScript\">alert('Demande de devis envoyee avec succes.');</SCRIPT>";
         exit;

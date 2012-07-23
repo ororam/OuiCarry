@@ -7,7 +7,7 @@
 {% block content %}
 Afin de nous contacter, veuillez remplir ce formulaire :<br><br>
 
-    <form action="contact" method="post" {{ form_enctype(form) }} class="blogger">
+    <form action="{{ url('site_contact') }}" method="post" {{ form_enctype(form) }} class="blogger">
         {{ form_errors(form) }}
 
         {{ form_row(form.nom) }}

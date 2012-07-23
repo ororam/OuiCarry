@@ -7,7 +7,7 @@
 {% block content %}
 Afin d'obtenir un devis, veuillez remplir ce formulaire :<br><br>
 
-    <form action="devis" method="post" {{ form_enctype(form) }} class="blogger">
+    <form action="{{ url('site_devis') }}" method="post" {{ form_enctype(form) }} class="blogger">
         {{ form_errors(form) }}
 
         {{ form_row(form.nom) }}

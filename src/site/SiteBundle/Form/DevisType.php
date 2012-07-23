@@ -10,19 +10,19 @@ class DevisType extends AbstractType
 {
     public function buildForm(FormBuilder $builder, array $options)
     {
-        $builder->add('nom');
-        $builder->add('email', 'email');
+        $builder->add('nom', 'text', array('label' => 'Votre nom'));
+        $builder->add('email', 'email', array('label' => 'Votre email'));
 
 
 $builder->add('depart', 'choice', array('choices' =>
             array('Paris' => 'Paris', 
-                'Dakar' => 'Dakar'), 'preferred_choices' => array('Paris'),));
+                'Dakar' => 'Dakar'), 'preferred_choices' => array('Paris')));
 
 $builder->add('destination', 'choice', array('choices' =>
             array('Dakar' => 'Dakar', 
-                'Paris' => 'Paris'), 'preferred_choices' => array('Dakar'),));
+                'Paris' => 'Paris'), 'preferred_choices' => array('Dakar')));
 
-        $builder->add('type', 'choice', array('choices' =>
+        $builder->add('type', 'choice', array('label' => 'Type de colis','choices' =>
             array('Vêtements, accessoires' => 'Vêtements, accessoires', 
                 'Sac à main, sacoche' => 'Sac à main, sacoche',
                 'Chaussures' => 'Chaussures',
@@ -41,7 +41,8 @@ $builder->add('destination', 'choice', array('choices' =>
                 'Cartes, coupons, tickets' => 'Cartes, coupons, tickets',
                 'Outils de bricolage' => 'Outils de bricolage',
                 'Médicaments' => 'Médicaments',
-                'Documents' => 'Documents'), 'preferred_choices' => array('baz'),));
+                'Documents' => 'Documents'), 'preferred_choices' => array('Vêtements, accessoires')));
+
         $builder->add('poids','number',array('label' => 'Poids en kg (100 kg max)'));
         $builder->add('description', 'textarea');
     }
