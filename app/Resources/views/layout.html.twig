@@ -12,8 +12,25 @@
 <META NAME="keywords" CONTENT="www.ouicarry.com, OuiCarry, envoyer un colis, Sénégal, France, avion, fret aérien, 9 euros par kilo, pas cher, économique, rapide, livraison rapide, Dakar, Paris, expédier, kilos, kilogrammes, kg, paquet, service postal, transporteur, transitaire">
 
     <link rel="icon" type="image/png" href="{{ asset('bundles/sitesite/images/favicon.png') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/sitesite/css/main.css') }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ asset('bundles/sitesite/css/main.css') }}" type="text/css" media="all">
+<link rel="stylesheet" href="{{ asset('bundles/sitesite/css/carousel.css') }}" type="text/css" media="all">
 
+<script type="text/javascript" src="{{ asset('bundles/sitesite/js/jquery-1.4.4.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/sitesite/js/simple.carousel.js') }}"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {          
+            // example 2
+            $("ul.example2").simplecarousel({
+                width:700,
+                height:324,
+                auto: 5000,
+                fade: 400,
+                pagination: true
+            });
+        });
+        
+    </script>
     </head>
     <body>
     <div id="content">
