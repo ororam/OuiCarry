@@ -19,6 +19,8 @@ class Devis
 
     protected $description;
 
+    protected $valeur;
+
     public function getNom()
     {
         return $this->nom;
@@ -88,4 +90,15 @@ class Devis
     {
         $this->depart = $depart;
     }
+
+    public function getValeur()
+    {
+        return $this->valeur;
+    }
+
+    public function setValeur($valeur)
+    {
+        $this->valeur = $valeur;
+    }
+    
 }

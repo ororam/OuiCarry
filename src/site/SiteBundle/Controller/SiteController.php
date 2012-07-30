@@ -80,6 +80,7 @@ class SiteController extends Controller
         Nom: ".$form->getNom()."\n
         Type: ".$form->getType()."\n
         Poids: ".$form->getPoids()."\n
+        Valeur: ".$form->getValeur()."\n
         Ville de départ: ".$form->getDepart()."\n
         Ville de destination: ".$form->getDestination()."\n
         Description: ".$form->getDescription()."\n";

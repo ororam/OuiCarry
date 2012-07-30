@@ -42,8 +42,8 @@ $builder->add('destination', 'choice', array('choices' =>
                 'Outils de bricolage' => 'Outils de bricolage',
                 'Médicaments' => 'Médicaments',
                 'Documents' => 'Documents'), 'preferred_choices' => array('Vêtements, accessoires')));
-
         $builder->add('poids','number',array('label' => 'Poids en kg (100 kg max)'));
+        $builder->add('valeur','number',array('label' => 'Valeur estimée (en euro)'));
         $builder->add('description', 'textarea');
     }
 
