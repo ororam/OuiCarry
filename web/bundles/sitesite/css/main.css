@@ -44,5 +44,5 @@ form.blogger input[type="email"],
 form.blogger input[type="option"]
     { width: 500px; line-height: 26px; font-size: 20px; min-height: 26px; }
 form.blogger textarea { width: 500px; height: 150px; line-height: 26px; font-size: 20px; }
-form.blogger input[type="submit"] { margin-left: 190px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
+form.blogger input[type="submit"] { margin-left: 191px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
 form.blogger ul li { color: #ff0000; margin-bottom: 5px; }
