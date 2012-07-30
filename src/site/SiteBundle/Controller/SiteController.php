@@ -20,13 +20,13 @@ class SiteController extends Controller
     {
         return $this->render('siteSiteBundle:Site:service.html.twig');
     }
-    public function agenceAction()
+    public function agencesAction()
     {
-        return $this->render('siteSiteBundle:Site:agence.html.twig');
+        return $this->render('siteSiteBundle:Site:agences.html.twig');
     }
-    public function colis_interditAction()
+    public function colis_interditsAction()
     {
-        return $this->render('siteSiteBundle:Site:colis_interdit.html.twig');
+        return $this->render('siteSiteBundle:Site:colis_interdits.html.twig');
     }
     public function mentions_legalesAction()
     {

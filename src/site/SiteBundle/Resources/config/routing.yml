@@ -12,9 +12,9 @@ site_service:
     pattern:   /service
     defaults:  { _controller: siteSiteBundle:Site:service }
 
-site_agence:
-    pattern:   /agence
-    defaults:  { _controller: siteSiteBundle:Site:agence }
+site_agences:
+    pattern:   /agences
+    defaults:  { _controller: siteSiteBundle:Site:agences }
 
 site_devis:
     pattern:   /devis
@@ -22,9 +22,9 @@ site_devis:
     requirements:
         _method:  POST|GET
 
-site_colis_interdit:
-    pattern:   /colis_interdit
-    defaults:  { _controller: siteSiteBundle:Site:colis_interdit }
+site_colis_interdits:
+    pattern:   /colis_interdits
+    defaults:  { _controller: siteSiteBundle:Site:colis_interdits }
 
 site_conditions_generales:
     pattern:   /conditions_generales
