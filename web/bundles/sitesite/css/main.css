@@ -40,9 +40,12 @@ form.blogger { font-size: 16px; }
 form.blogger div { clear: left; margin-bottom: 10px; }
 form.blogger label { float: left; margin-right: 10px; text-align: right; width: 180px; font-weight: bold; vertical-align: top; padding-top: 10px; }
 form.blogger input[type="text"],
-form.blogger input[type="email"],
+form.blogger input[type="email"]
+    { padding-top: 5px; width: 500px; font-size: 14px; height: 20px; }
 form.blogger option, select
-    { padding-top: 5px; width: 500px; line-height: 26px; font-size: 14px; min-height: 26px; }
+	{ padding-top: 5px; width: 500px; font-size: 12px; }
+form.blogger option, select a
+	{ width: 470px; }
 form.blogger textarea { width: 500px; height: 150px; line-height: 26px; font-size: 20px; }
 form.blogger input[type="submit"] { margin-left: 191px; width: 508px; line-height: 26px; font-size: 20px; min-height: 26px; }
 form.blogger ul li { color: #ff0000; margin-bottom: 5px; }
