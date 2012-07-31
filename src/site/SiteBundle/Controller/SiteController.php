@@ -75,7 +75,7 @@ class SiteController extends Controller
         $form = $form->getData();
         $destinataire = 'contact@ouicarry.com';
         $email = $form->getEmail();
-        $sujet = '[DEMMANDE DE DEVIS - OuiCarry]: '.$form->getType();
+        $sujet = '[DEMANDE DE DEVIS - OuiCarry]: '.$form->getType();
         $message = "From: ".$email."\n\n
         Nom: ".$form->getNom()."\n
         Type: ".$form->getType()."\n
